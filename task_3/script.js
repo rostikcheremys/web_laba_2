@@ -32,11 +32,7 @@
             const square = document.createElement("div");
             square.classList.add("square");
 
-            if (char === '1') {
-                square.classList.add("black"); // Якщо 1, квадрат синій
-            } else if (char === '0') {
-                square.classList.add("white"); // Якщо 0, квадрат білий
-            }
+            char === "1" ? square.classList.add("black") : square.classList.add("white");
 
             container.appendChild(square);
         }
